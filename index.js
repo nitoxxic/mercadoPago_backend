@@ -22,13 +22,9 @@ app.post("/create_preferences", async (req, res) =>{
     const body = {
         items:[ {
 
-              //title:req.body.title,
-             //quantity:Number(req.body.quantity),
-            //unit_price:Number(req.body.unit_price),
-
-            title: "Mi producto",
-            quantity: 1,
-            unit_price: 100,
+            title:req.body.title,
+            quantity:Number(req.body.quantity),
+            unit_price:Number(req.body.unit_price),
             currency_id: "ARS",
         }],
         back_urls:{
